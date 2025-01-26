@@ -101,7 +101,7 @@ export const DATA = {
       dates: "May 2024 - August 2024",
       active: true,
       description:
-        "Developed mobile app interfaces for Goolink with precise slicing and seamless API integration. Implemented JWT authentication, optimized data handling with caching, and integrated payment gateway for a smooth user experience.",
+        "Goolink is mobile apps project using Flutter, where I'm spearheading the slicing process and seamless API integration. Focused on creating a smooth, responsive UI while ensuring flawless connectivity with the backend for an intuitive user experience.",
       technologies: [
         "Flutter",
         "Dart",
