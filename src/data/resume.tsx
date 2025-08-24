@@ -68,6 +68,7 @@ export const DATA = {
       logoUrl: "/oxinos.jpeg",
       start: "May 2024",
       end: "Now",
+      description: "",
       // description:
       //   "Contributed to the development of a mobile application project focused on creating customizable features for users. Responsibilities included debugging and resolving issues in the Flutter codebase to enhance app stability. Collaborated using the Gitflow workflow to ensure structured code management and smooth feature integration. Additionally, optimized app performance to improve responsiveness, efficiency, and user experience.",
     },
