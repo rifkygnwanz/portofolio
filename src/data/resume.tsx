@@ -11,7 +11,7 @@ export const DATA = {
     "Mobile Developer focused on Flutter, expert in modern apps with responsive design, seamless API integration, and state management solutions.",
   summary:
     "Currently I'm very focused on developing mobile applications using Flutter. With a keen interest in creating smooth and efficient mobile apps, I have dedicated my time and efforts to mastering Flutter and honing my skills.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/meoxinos.png",
   skills: [
     "Flutter",
     "Dart",
@@ -51,7 +51,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "rifkygnwanz@gmail.com",
+        url: "mailto:rifkygnwanz@gmail.com",
         icon: Icons.email,
         navbar: true,
       },
