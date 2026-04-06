@@ -88,14 +88,14 @@ export const DATA = {
     // },
   ],
   education: [
-    // {
-    //     school: "SMK LPPM RI 1 Bandung",
-    //     href: "https://smklppmribdg.sch.id/",
-    //     degree: "Software Engineering",
-    //     logoUrl: "/lppmri.jpg",
-    //     start: "2021",
-    //     end: "2024",
-    //   },
+    {
+      school: "SMK LPPM RI 1 Bandung",
+      href: "https://smklppmribdg.sch.id/",
+      degree: "Software Engineering",
+      logoUrl: "/lppmri.jpg",
+      start: "2021",
+      end: "2024",
+    },
   ],
   projects: [
     {
