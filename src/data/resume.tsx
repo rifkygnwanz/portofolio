@@ -8,9 +8,9 @@ export const DATA = {
   location: "Bandung, West Java",
   locationLink: "https://www.google.com/maps/place/bandung",
   description:
-    "Mobile Developer focused on Flutter, expert in modern apps with responsive design, seamless API integration, and state management solutions.",
+    "Mobile Developer with 2+ years of experience building clean, responsive, and high-performance apps with Flutter.",
   summary:
-    "Currently I'm very focused on developing mobile applications using Flutter. With a keen interest in creating smooth and efficient mobile apps, I have dedicated my time and efforts to mastering Flutter and honing my skills.",
+    "I'm really passionate about building smooth and efficient mobile apps using Flutter. Most of my daily work involves writing clean code, setting up solid state management, and handling the publishing process to both the Play Store and App Store.",
   avatarUrl: "/meoxinos.png",
   stats: {
     totalProjects: 20,
