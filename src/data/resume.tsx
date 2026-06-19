@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Mobile Developer with 2+ years of experience building clean, responsive, and high-performance apps with Flutter.",
   summary:
-    "I'm really passionate about building smooth and efficient mobile apps using Flutter. Most of my daily work involves writing clean code, setting up solid state management, and handling the publishing process to both the Play Store and App Store.",
+    "Focused on building scalable and user-friendly mobile applications. Skilled in Flutter, Dart, state management, clean architecture, REST API integration, Firebase services, and publishing applications to Google Play Store and Apple App Store.",
   avatarUrl: "/meoxinos.png",
   stats: {
     totalProjects: 20,
@@ -19,16 +19,18 @@ export const DATA = {
   },
   skills: [
     "Flutter",
+    "Dart",
     "Swift",
+    "BLoC",
+    "Riverpod",
+    "GetX",
+    "Clean Architecture",
+    "RESTful API",
     "Firebase",
+    "AdMob",
+    "Git",
     "Google Play Console",
     "App Store Connect",
-    "Admob",
-    "Git",
-    "Restful API",
-    "WordPress",
-    "Layout Design",
-    "UI/UX",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -77,7 +79,7 @@ export const DATA = {
       start: "April 2024",
       end: "Now",
       description:
-        "• Contributed to the end-to-end development and maintenance of production-grade mobile applications using Flutter and Dart.\n\n• Managed the deployment and publishing processes of multiple applications to both the Google Play Store and Apple App Store, ensuring compliance with store guidelines.\n\n• Served as the Lead PIC for Oxinos' annual collaboration project with Kemdikbud, managing the end-to-end layout production of 1,000+ children's storybooks and leading the finalization process directly with ministry officials in Jakarta.",
+        "• Developed and maintained 20+ Flutter applications, including production and internal projects, improving app stability and release efficiency.\n\n• Managed the deployment and publishing processes of multiple applications to both the Google Play Store and Apple App Store, ensuring compliance with store guidelines.\n\n• Led digital production workflow for Oxinos' annual collaboration project with Kemdikbud, coordinating the delivery of 1,000+ children's storybook layouts.",
     },
     // {
     //   company: "Badan Pengembangan dan Pembinaan Bahasa",
