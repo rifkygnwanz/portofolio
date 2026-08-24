@@ -105,6 +105,29 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Akiradata - Document Management System",
+      slug: "akiradata",
+      href: "/projects/akiradata",
+      dates: "Jun 2026 - Aug 2026",
+      active: true,
+      description:
+        "An enterprise Document Management System (DMS) mobile application developed end-to-end for PT Akiradata Pratama. It streamlines digital and physical archive tracking, document loan requests (hardcopy & softcopy), in-app document previews, and multi-tier approval workflows.",
+      technologies: ["Flutter", "Dart"],
+      categories: ["mobile"],
+      links: [
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=id.co.akiradata.dms",
+          icon: <Icons.playstore className="size-3" />,
+        },
+      ],
+      image: "/akiradata/akiradata.png",
+      video: "",
+      screenshotDir: "akiradata/screenshoot",
+      screenshots: [],
+    },
+
+    {
       title: "Tovio - E-Commerce",
       slug: "tovio",
       href: "/projects/tovio",
@@ -230,6 +253,28 @@ export const DATA = {
       image: "/tjsl-klik/tjsl-klik.png",
       video: "",
       screenshotDir: "tjsl-klik/screenshoot",
+      screenshots: [],
+    },
+    {
+      title: "Nurtech - Smart Boarding School",
+      slug: "nurtech",
+      href: "/projects/nurtech",
+      dates: "May 2026 - Jun 2026",
+      active: true,
+      description:
+        "A comprehensive digital ecosystem for Islamic boarding schools (pesantren) comprising a cross-platform mobile application for parents and a centralized web admin panel. Features include real-time student academic & attendance monitoring, cashless pocket money management (smart card RFID/POS integration), tuition & bill payments, digital Al-Qur'an, and many more.",
+      technologies: ["Flutter", "Dart", "Next.js", "TypeScript"],
+      categories: ["mobile", "web"],
+      links: [
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=id.oxinos.nurtech",
+          icon: <Icons.playstore className="size-3" />,
+        },
+      ],
+      image: "/nurtech/nurtech.png",
+      video: "",
+      screenshotDir: "nurtech/screenshoot",
       screenshots: [],
     },
     {
