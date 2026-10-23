@@ -8,29 +8,33 @@ export const DATA = {
   location: "Bandung, West Java",
   locationLink: "https://www.google.com/maps/place/bandung",
   description:
-    "Mobile Developer with 2+ years of experience building clean, responsive, and high-performance apps with Flutter.",
+    "Mobile Developer with 2+ years of experience building clean, responsive, and high-performance applications across Flutter and Native iOS (Swift).",
   summary:
-    "Focused on building scalable and user-friendly mobile applications. Skilled in Flutter, Dart, state management, clean architecture, REST API integration, Firebase services, and publishing applications to Google Play Store and Apple App Store.",
+    "Focused on building scalable, reliable, and user-friendly mobile applications across cross-platform and native ecosystems. Skilled in Flutter, Native iOS (Swift), Clean Architecture, MVVM, state management, REST API integration, Firebase services, and publishing applications to Apple App Store and Google Play Store.",
   avatarUrl: "/meoxinos.png",
   stats: {
     totalProjects: 20,
-    playStore: 15,
-    appStore: 1,
+    playStore: 17,
+    appStore: 3,
   },
   skills: [
     "Flutter",
     "Dart",
     "Swift",
+    "SwiftUI",
+    "Clean Architecture",
+    "MVVM",
     "BLoC",
     "Riverpod",
     "GetX",
-    "Clean Architecture",
+    "Swift Package Manager",
     "RESTful API",
     "Firebase",
     "AdMob",
+    "Xcode",
     "Git",
-    "Google Play Console",
     "App Store Connect",
+    "Google Play Console",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -70,14 +74,26 @@ export const DATA = {
 
   work: [
     {
+      company: "Venturo Pro",
+      href: "https://venturo.pro/",
+      badges: [],
+      location: "Hybrid",
+      title: "Mobile Engineer",
+      logoUrl: "/venturo.jpg",
+      start: "Sept 2026",
+      end: "Now",
+      description:
+        "• Maintained and continued the development of 2 production native iOS applications using Swift, ensuring robust performance and stability.\n\n• Implemented feature enhancements, optimized code quality, and resolved bugs across existing iOS codebases.",
+    },
+    {
       company: "Oxinos",
       href: "https://oxinos.id/",
       badges: [],
       location: "On site",
       title: "Mobile Developer",
       logoUrl: "/oxinos.jpeg",
-      start: "April 2024",
-      end: "Now",
+      start: "Apr 2024",
+      end: "Sept 2026",
       description:
         "• Developed and maintained 20+ Flutter applications, including production and internal projects, improving app stability and release efficiency.\n\n• Managed the deployment and publishing processes of multiple applications to both the Google Play Store and Apple App Store, ensuring compliance with store guidelines.\n\n• Led digital production workflow for Oxinos' annual collaboration project with Kemdikbud, coordinating the delivery of 1,000+ children's storybook layouts.",
     },
@@ -105,13 +121,56 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Akiradata - Document Management System",
+      title: "SeQure By Qtrust",
+      slug: "sequre",
+      href: "/projects/sequre",
+      dates: "Sept 2026 - Now",
+      active: true,
+      description:
+        "Maintained and enhanced 2 production iOS apps (SeQure ID & SeQure Pro) built natively with Swift and MVVM architecture. Refactored legacy modules, integrated QR/barcode scanning capabilities for product authentication, optimized memory usage, and managed end-to-end releases on Apple App Store.",
+      technologies: ["Swift", "Swift Package Manager"],
+      categories: ["mobile"],
+      links: [
+        {
+          type: "SeQure ID",
+          href: "https://play.google.com/store/apps/details?id=id.sequre.consumer",
+          icon: <Icons.playstore className="size-3" />,
+        },
+        {
+          type: "SeQure ID",
+          href: "https://apps.apple.com/id/app/sequre-id/id6449573958",
+          icon: <Icons.appstore className="size-3" />,
+        },
+        {
+          type: "SeQure Pro",
+          href: "https://play.google.com/store/apps/details?id=id.sequre.pro",
+          icon: <Icons.playstore className="size-3" />,
+        },
+        {
+          type: "SeQure Pro",
+          href: "https://apps.apple.com/id/app/sequre-pro/id6738899980",
+          icon: <Icons.appstore className="size-3" />,
+        },
+        {
+          type: "Official Website",
+          href: "https://sequre.id/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/sequre/sequre.png",
+      video: "",
+      screenshotDir: "sequre/screenshoot",
+      screenshots: [],
+    },
+
+    {
+      title: "DMS Akiradata",
       slug: "akiradata",
       href: "/projects/akiradata",
       dates: "Jun 2026 - Aug 2026",
       active: true,
       description:
-        "An enterprise Document Management System (DMS) mobile application developed end-to-end for PT Akiradata Pratama. It streamlines digital and physical archive tracking, document loan requests (hardcopy & softcopy), in-app document previews, and multi-tier approval workflows.",
+        "Built an enterprise document management mobile app from scratch using Flutter and Clean Architecture. Implemented multi-tier document loan approval workflows, secure in-app PDF previewing, offline-first metadata caching, and seamless role-based REST API synchronization.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -134,7 +193,7 @@ export const DATA = {
       dates: "Nov 2025 - Jan 2026",
       active: true,
       description:
-        "A trusted secondhand marketplace platform focused on safe and verified transactions. The ecosystem consists of a Customer app for seamless buying and selling, and a dedicated Inspector app used for professional quality control and item verification.",
+        "Architected and developed a dual-app secondhand marketplace ecosystem (Customer & Inspector) using Flutter. Built secure escrow-backed transaction lifecycles, structured item quality inspection workflows with multi-photo uploads, and real-time order status tracking.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -166,7 +225,7 @@ export const DATA = {
       dates: "Nov 2025 - Mar 2026",
       active: true,
       description:
-        "A comprehensive food delivery ecosystem comprising three distinct applications: Customer, Merchant, and Driver. The platform facilitates seamless online food ordering, merchant inventory management, and real-time delivery tracking for drivers.",
+        "Engineered a 3-app food delivery ecosystem (Customer, Merchant, Driver) using Flutter. Implemented real-time GPS fleet tracking, automated order dispatching via WebSockets, responsive merchant catalog management, and in-app balance & payment integrations.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -203,7 +262,7 @@ export const DATA = {
       dates: "Jan 2025 - Mar 2026",
       active: true,
       description:
-        "A comprehensive shuttle and intercity travel booking platform consisting of Customer and Driver applications. It enables users to easily schedule trips, choose specific routes, select their preferred seats, and track their assigned fleet in real-time.",
+        "Developed a cross-platform intercity shuttle booking ecosystem comprising Passenger and Driver apps with Flutter. Implemented interactive seat selection layouts, dynamic route scheduling, live fleet GPS tracking, and automated digital ticketing.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -235,7 +294,7 @@ export const DATA = {
       dates: "Jul 2025",
       active: true,
       description:
-        "An internal corporate platform for Jasa Marga to manage and monitor Social and Environmental Responsibility (TJSL) programs. Responsible for the end-to-end publishing process on both Google Play Store and Apple App Store, ensuring full compliance with platform-specific standards.",
+        "Developed a corporate CSR program monitoring mobile app for Jasa Marga using Flutter. Implemented secure role-based data collection, interactive analytical dashboards, and led the end-to-end publishing compliance on both Apple App Store and Google Play Store.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -256,13 +315,13 @@ export const DATA = {
       screenshots: [],
     },
     {
-      title: "Nurtech - Smart Boarding School",
+      title: "Nurtech - Boarding School",
       slug: "nurtech",
       href: "/projects/nurtech",
       dates: "May 2026 - Jun 2026",
       active: true,
       description:
-        "A comprehensive digital ecosystem for Islamic boarding schools (pesantren) comprising a cross-platform mobile application for parents and a centralized web admin panel. Features include real-time student academic & attendance monitoring, cashless pocket money management (smart card RFID/POS integration), tuition & bill payments, digital Al-Qur'an, and many more.",
+        "Developed a smart pesantren ecosystem comprising a parent mobile app (Flutter) and a web admin panel (Next.js & TypeScript). Integrated student academic & attendance monitoring, cashless student pocket money via RFID/POS card integration, and automated SPP billing with Midtrans payment gateway.",
       technologies: ["Flutter", "Dart", "Next.js", "TypeScript"],
       categories: ["mobile", "web"],
       links: [
@@ -284,7 +343,7 @@ export const DATA = {
       dates: "May 2026",
       active: true,
       description:
-        "A digital services marketplace platform facilitating quick and secure transactions for buying and selling professional skills. It enables freelancers to showcase portfolios, manage orders, and monetize their skills, while offering clients an intuitive interface to discover and hire freelance talent.",
+        "Engineered a digital freelance services marketplace app using Flutter and RESTful API. Implemented interactive freelancer portfolio showcases, custom service order checkout flows, and in-app chat messaging for client-talent collaboration.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -311,7 +370,7 @@ export const DATA = {
       dates: "Apr 2026",
       active: true,
       description:
-        "A dedicated mobile application designed as a digital information portal for members of the Awi Sarungkun Multipurpose Cooperative (KSU Awi Sarungkun). The platform provides members with real-time, transparent access to their financial summaries, including savings balances, active loan status, and transaction history, ensuring secure and convenient cooperative management.",
+        "Built a digital cooperative mobile portal for Awi Sarungkun members using Flutter. Implemented real-time financial tracking for savings balances, active loan installment schedules, and secure historical ledger audits.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -333,7 +392,7 @@ export const DATA = {
       dates: "May 2025",
       active: true,
       description:
-        "A modern financial management and tracking application. It helps users monitor their income and expenses through an intuitive dashboard, providing clear financial insights, budgeting tools, and secure transaction tracking.",
+        "Developed a modern personal finance tracking application using Flutter. Engineered real-time income and expense logging, interactive budget progress visualizers with custom charts, and local data persistence for offline accessibility.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -360,7 +419,7 @@ export const DATA = {
       dates: "Aug 2025 - Nov 2025",
       active: true,
       description:
-        "An interactive, child-friendly mobile learning application. It provides engaging educational content with colorful layouts, fluid animations, and intuitive navigation specifically designed to enhance children's digital learning experiences.",
+        "Created an interactive digital children's learning & storybook application using Flutter. Built high-performance, fluid page-turn animations, synchronized audio narration playback, and child-safe intuitive UI navigation.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -387,7 +446,7 @@ export const DATA = {
       dates: "Jun 2025 - Jul 2025",
       active: true,
       description:
-        "A dynamic mobile platform for creating custom digital forms, questionnaires, and surveys. It streamlines data collection and sharing processes across mobile devices, enabling users to effortlessly gather and analyze responses.",
+        "Engineered a mobile form builder and survey collection app using Flutter. Developed a dynamic JSON-driven form renderer supporting diverse input types, offline response caching, and instant cloud survey synchronization.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -414,7 +473,7 @@ export const DATA = {
       dates: "May 2025 - Jun 2025",
       active: true,
       description:
-        "An interactive digital presence and profile management application. It equips users with tools to build, personalize, and share their professional profiles, providing a streamlined way to manage personal branding and networking.",
+        "Developed a digital profile and networking mobile app using Flutter. Built dynamic vCard generation, social link aggregation, customizable profile theme previewing, and quick QR code profile sharing.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -441,7 +500,7 @@ export const DATA = {
       dates: "Apr 2025 - Aug 2025",
       active: true,
       description:
-        "A comprehensive travel booking platform supporting reservations for tours, flights, and hotels. It simplifies travel planning by offering unified search, seamless booking flows, and real-time availability updates all within a single application.",
+        "Built a mobile travel reservation platform for tours, flights, and accommodations using Flutter. Implemented unified multi-category search filters, seamless reservation booking flows, and real-time booking history updates.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -468,7 +527,7 @@ export const DATA = {
       dates: "Feb 2025 - Apr 2025",
       active: true,
       description:
-        "A dedicated mobile video platform focused on Islamic learning and inspiration. It serves as an educational hub where users can discover, stream, and bookmark high-quality religious lectures, inspirational content, and customized user feeds.",
+        "Developed an Islamic video streaming mobile application with Flutter. Implemented smooth video playback streaming, category-based content discovery, user favorites bookmarking, and personalized content feeds.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [
@@ -495,7 +554,7 @@ export const DATA = {
       dates: "Nov 2024 - Jan 2025",
       active: true,
       description:
-        "A suite of three distinct Point of Sale (POS) applications custom-built to support different business models: retail toys, restaurants, and snack shops. The apps streamline daily operations by managing digital product catalogs, tracking active inventory, and generating real-time sales reports.",
+        "Developed a suite of 3 customized Point of Sale (POS) applications for retail, restaurant, and snack shop workflows with Flutter. Implemented digital product catalogs, real-time inventory tracking, and POS thermal Bluetooth receipt printing.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [],
@@ -511,7 +570,7 @@ export const DATA = {
       dates: "May 2024 - Aug 2024",
       active: true,
       description:
-        "A versatile link-in-bio platform that empowers users to consolidate multiple content links into a single, shareable URL. It offers extensive profile personalization, centralized link management, and comprehensive engagement tracking.",
+        "Built a mobile link-in-bio creation platform using Flutter. Developed instant custom URL redirection, multi-link profile card customizations, and link-click engagement tracking analytics.",
       technologies: ["Flutter", "Dart"],
       categories: ["mobile"],
       links: [],

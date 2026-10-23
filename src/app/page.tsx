@@ -18,10 +18,44 @@ import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
+const monthMap: { [key: string]: number } = {
+  jan: 0,
+  feb: 1,
+  mar: 2,
+  apr: 3,
+  may: 4,
+  mei: 4,
+  jun: 5,
+  jul: 6,
+  aug: 7,
+  agu: 7,
+  sep: 8,
+  oct: 9,
+  okt: 9,
+  nov: 10,
+  dec: 11,
+  des: 11,
+};
+
 const parseProjectDate = (datesStr: string) => {
   if (!datesStr) return new Date(0);
   const parts = datesStr.split("-");
   const targetStr = (parts[parts.length - 1] || "").trim();
+
+  // If the project is ongoing (Now / Present), it represents the most recent active project
+  if (/^(now|present|sekarang)$/i.test(targetStr)) {
+    if (parts.length > 1) {
+      const startMatch = parts[0].trim().match(/([a-zA-Z]+)\s+(\d{4})/);
+      if (startMatch) {
+        const monthStr = startMatch[1].toLowerCase().substring(0, 3);
+        const year = parseInt(startMatch[2], 10);
+        const month = monthMap[monthStr] !== undefined ? monthMap[monthStr] : 0;
+        // Boost year to future so ongoing projects stay on top, with newest start date first
+        return new Date(year + 100, month, 1);
+      }
+    }
+    return new Date(3000, 0, 1);
+  }
 
   const match = targetStr.match(/([a-zA-Z]+)\s+(\d{4})/);
   if (!match) {
@@ -31,21 +65,6 @@ const parseProjectDate = (datesStr: string) => {
     }
     return new Date(0);
   }
-
-  const monthMap: { [key: string]: number } = {
-    jan: 0,
-    feb: 1,
-    mar: 2,
-    apr: 3,
-    may: 4,
-    jun: 5,
-    jul: 6,
-    aug: 7,
-    sep: 8,
-    oct: 9,
-    nov: 10,
-    dec: 11,
-  };
 
   const monthStr = match[1].toLowerCase().substring(0, 3);
   const year = parseInt(match[2], 10);
@@ -119,28 +138,30 @@ export default function Page() {
         </BlurFade>
       </section>
       <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-5">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
+          <div className="flex flex-col gap-y-2">
+            {DATA.work.map((work, id) => (
+              <BlurFade
                 key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
+                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              >
+                <ResumeCard
+                  key={work.company}
+                  logoUrl={work.logoUrl}
+                  altText={work.company}
+                  title={work.company}
+                  subtitle={work.title}
+                  href={work.href}
+                  badges={work.badges}
+                  period={`${work.start} - ${work.end ?? "Present"}`}
+                  description={work.description}
+                />
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       {/* {DATA.education && DATA.education.length > 0 && (
