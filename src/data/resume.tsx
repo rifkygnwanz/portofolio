@@ -81,7 +81,7 @@ export const DATA = {
       title: "Mobile Engineer",
       logoUrl: "/venturo.jpg",
       start: "Sept 2026",
-      end: "Now",
+      end: "Present",
       description:
         "• Maintained and continued the development of 2 production native iOS applications using Swift, ensuring robust performance and stability.\n\n• Implemented feature enhancements, optimized code quality, and resolved bugs across existing iOS codebases.",
     },
@@ -105,7 +105,7 @@ export const DATA = {
     //   title: "Layout Design",
     //   logoUrl: "/badanbahasa.png",
     //   start: "April 2024",
-    //   end: "Now",
+    //   end: "Present",
     //   description: "",
     // },
   ],
@@ -124,7 +124,7 @@ export const DATA = {
       title: "SeQure By Qtrust",
       slug: "sequre",
       href: "/projects/sequre",
-      dates: "Sept 2026 - Now",
+      dates: "Sept 2026 - Present",
       active: true,
       description:
         "Maintained and enhanced 2 production iOS apps (SeQure ID & SeQure Pro) built natively with Swift and MVVM architecture. Refactored legacy modules, integrated QR/barcode scanning capabilities for product authentication, optimized memory usage, and managed end-to-end releases on Apple App Store.",
